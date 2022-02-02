@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="zW0-uy-bPS">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nXQ-RG-yc4" customClass="LoginViewController" customModule="UserProfileQueryDemo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nXQ-RG-yc4" customClass="LoginViewController" customModule="UserProfileSyncDemo" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AQZ-w5-rtF"/>
                         <viewControllerLayoutGuide type="bottom" id="l6n-8I-Zr9"/>
@@ -119,7 +119,7 @@
         <!--Your Profile-->
         <scene sceneID="fb1-87-Uxs">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="mXp-RW-v0H" customClass="ProfileViewController" customModule="UserProfileQueryDemo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="mXp-RW-v0H" customClass="ProfileViewController" customModule="UserProfileSyncDemo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qdq-gp-fLk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +269,7 @@
         <!--University View Controller-->
         <scene sceneID="sqY-5r-ldg">
             <objects>
-                <viewController storyboardIdentifier="UniversityViewController" id="7Z9-f9-fp0" customClass="UniversityViewController" customModule="UserProfileQueryDemo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UniversityViewController" id="7Z9-f9-fp0" customClass="UniversityViewController" customModule="UserProfileSyncDemo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4rD-cK-w9Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +301,7 @@
                                 <rect key="frame" x="0.0" y="232" width="375" height="430"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniversityCell" rowHeight="120" id="PN2-qT-jYo" customClass="UniversityCell" customModule="UserProfileQueryDemo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniversityCell" rowHeight="120" id="PN2-qT-jYo" customClass="UniversityCell" customModule="UserProfileSyncDemo">
                                         <rect key="frame" x="0.0" y="44.5" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PN2-qT-jYo" id="JLH-Ah-bpR">
