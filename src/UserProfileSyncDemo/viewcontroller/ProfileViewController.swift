@@ -116,15 +116,7 @@ class ProfileViewController
         
         //setup presenter
         self.userPresenter.attachPresentingView(self)
-        self.userPresenter.fetchRecordForCurrentUser(handler: { [weak self](record, error) in
-            switch error {
-            case nil:
-                self?.record = record
-                self?.setFields()
-            default:
-                self?.showAlertWithTitle(NSLocalizedString("Error!", comment: ""), message: (error?.localizedDescription) ?? "Unknown error while fetching user record")
-            }
-        })
+        self.userPresenter.fetchRecordForCurrentUserWithLiveModeEnabled(__: true)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
