@@ -35,7 +35,7 @@
     "userprofile": {
       "import_docs": true,
       "bucket":"userprofile",
-      "server": "couchbases://cb-server",
+      "server": "couchbases://localhost",
       "enable_shared_bucket_access":true,
       "delta_sync": {
         "enabled":false
