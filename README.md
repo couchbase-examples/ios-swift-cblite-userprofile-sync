@@ -1,9 +1,21 @@
-# Quickstart in Couchbase Lite Query with Swift and UIKit 
+# Quickstart in Couchbase Lite Sync with Swift and UIKit 
 #### Build an iOS App in Swift with Couchbase Lite 
 
-> This repo is designed to show you an app that allows users to log in and make changes to their user profile information.  User profile information is persisted as a Document in the local Couchbase Lite Database. When the user logs out and logs back in again, the profile information is loaded from the Database.  This app also demostrates how you can bundle, load, and use a `prebuilt` instance of Couchbase Lite and introduces you to the basics of the `QueryBuilder` interface.
+> Couchbase Sync Gateway is a key component of the Couchbase Mobile stack. It is an Internet-facing synchronization mechanism that securely syncs data across devices as well as between devices and the cloud. Couchbase Mobile 3.0 introduces centralized persistent module configuration of synchronization, which simplifies the administration of Sync Gateway clusters — see <a target="_blank" rel="noopener noreferrer" href="https://docs.couchbase.com/sync-gateway/3.0/configuration-overview.html">Sync Gateway Configuration</a>.  
 
-Full documentation can be found on the [Couchbase Developer Portal](https://developer.couchbase.com/tutorial-quickstart-ios-uikit-query).
+The core functions of the Sync Gateway include
+
+- Data Synchronization across devices and the cloud
+- Authorization & Access Control
+- Data Validation
+
+This tutorial will demostrate how to 
+- Setup the Couchbase Sync Gateway (with Docker) to sync content between multiple Couchbase Lite enabled clients. We will will cover the basics of the Sync Gateway Configuration.
+- Configure your Sync Gateway to enforce data routing, access control and authorization. We will cover the basics of Sync Function API
+- Configure your Couchbase Lite clients for replication with the Sync Gateway
+- Use "Live Queries" or Query events within your Couchbase Lite clients to be asyncronously notified of changes
+
+Full documentation can be found on the <a target="_blank" rel="noopener noreferrer" href="https://developer.couchbase.com/tutorial-quickstart-ios-uikit-sync">Couchbase Developer Portal</a>.
 
 
 ## Prerequisites
@@ -28,10 +40,10 @@ The sample app follows the [MVP pattern](https://en.wikipedia.org/wiki/Model%E2%
 
 ## Try it out
 
-* Open `src/UserProfileQueryDemo.xcodeproj` using Xcode
+* Open `src/UserProfileSyncDemo.xcodeproj` using Xcode
 * Build and run the project.
 * Verify that you see the login screen.
 
 ## Conclusion
 
-This tutorial walked you through an example of how to use a pre-built Couchbase Lite database and has a simple Query example to show you how to use the `QueryBuilder` API in Swift.
+This tutorial walked you through an example of how to use a Sync Gateway to synchronize data between Couchbase Lite enabled clients. We discussed how to configure your Sync Gateway to enforce relevat access control, authorization and data routing between Couchbase Lite enabled clients.
