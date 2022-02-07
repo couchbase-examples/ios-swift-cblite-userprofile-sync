@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F86E8462037E292007ED29E"
-               BuildableName = "UserProfileQueryDemo.app"
+               BuildableName = "UserProfileSyncDemo.app"
                BlueprintName = "UserProfileSyncDemo"
                ReferencedContainer = "container:UserProfileSyncDemo.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0D97AFA8278E20D5003FCDBD"
-               BuildableName = "UserProfileQueryDemoUITests.xctest"
+               BuildableName = "UserProfileSyncDemoUITests.xctest"
                BlueprintName = "UserProfileSyncDemoUITests"
                ReferencedContainer = "container:UserProfileSyncDemo.xcodeproj">
             </BuildableReference>
@@ -49,7 +49,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0D97AFA8278E20D5003FCDBD"
-               BuildableName = "UserProfileQueryDemoUITests.xctest"
+               BuildableName = "UserProfileSyncDemoUITests.xctest"
                BlueprintName = "UserProfileSyncDemoUITests"
                ReferencedContainer = "container:UserProfileSyncDemo.xcodeproj">
             </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F86E8462037E292007ED29E"
-            BuildableName = "UserProfileQueryDemo.app"
+            BuildableName = "UserProfileSyncDemo.app"
             BlueprintName = "UserProfileSyncDemo"
             ReferencedContainer = "container:UserProfileSyncDemo.xcodeproj">
          </BuildableReference>
@@ -88,7 +88,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F86E8462037E292007ED29E"
-            BuildableName = "UserProfileQueryDemo.app"
+            BuildableName = "UserProfileSyncDemo.app"
             BlueprintName = "UserProfileSyncDemo"
             ReferencedContainer = "container:UserProfileSyncDemo.xcodeproj">
          </BuildableReference>
