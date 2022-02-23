@@ -610,7 +610,7 @@
 			repositoryURL = "https://github.com/couchbase/couchbase-lite-swift-ee.git";
 			requirement = {
 				kind = exactVersion;
-				version = "3.0.0-beta02";
+				version = "3.0";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
