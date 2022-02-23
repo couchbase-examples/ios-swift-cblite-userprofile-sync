@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/labeaaa/Developer/couchbase/tutorials/ios-swift-cblite-userprofile-sync/src/UserProfileSyncDemo.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

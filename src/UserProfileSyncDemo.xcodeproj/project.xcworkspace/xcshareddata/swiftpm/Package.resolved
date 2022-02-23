@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/couchbase/couchbase-lite-swift-ee.git",
         "state": {
           "branch": null,
-          "revision": "25469e9284d810b72af88bfaebc54e24b2fcf46e",
-          "version": "3.0.0-beta02"
+          "revision": "0f218c593f526e8356ac62bdd06d9aa8d4813baf",
+          "version": "3.0.0"
         }
       }
     ]
