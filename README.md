@@ -40,7 +40,9 @@ The sample app follows the [MVP pattern](https://en.wikipedia.org/wiki/Model%E2%
 
 ## Try it out
 
+* Run `sh install_tutorial.sh` to download specified version of Couchbase Lite framework
 * Open `src/UserProfileSyncDemo.xcodeproj` using Xcode
+* Drag the `CouchbaseLiteSwift.xcframework` downloaded in Step 1 into the project (do not copy)
 * Build and run the project.
 * Verify that you see the login screen.
 

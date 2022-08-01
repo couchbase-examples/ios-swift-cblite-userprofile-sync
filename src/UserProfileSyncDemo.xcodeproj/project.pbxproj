@@ -10,12 +10,12 @@
 		0D83513427960D8000580A24 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83513327960D8000580A24 /* FormTextField.swift */; };
 		0D835136279629D400580A24 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D835135279629D400580A24 /* ProfileViewController.swift */; };
 		0D97AFAE278E20D5003FCDBD /* FunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D97AFAD278E20D5003FCDBD /* FunctionalTests.swift */; };
-		0DF7C41A279F16AF00D3E653 /* CouchbaseLiteSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0DF7C419279F16AF00D3E653 /* CouchbaseLiteSwift */; };
 		0DF7C41C279F2A2200D3E653 /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7C41B279F2A2200D3E653 /* UniversityViewController.swift */; };
 		0DF7C41F279F41C100D3E653 /* UniversityRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7C41E279F41C100D3E653 /* UniversityRecord.swift */; };
 		0DF7C421279F439800D3E653 /* UniversityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7C420279F439800D3E653 /* UniversityPresenter.swift */; };
 		0DF7C424279F514600D3E653 /* UniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7C423279F514600D3E653 /* UniversityCell.swift */; };
 		0DF7C426279F5D8800D3E653 /* universities.cblite2 in Resources */ = {isa = PBXBuildFile; fileRef = 0DF7C425279F5D8800D3E653 /* universities.cblite2 */; };
+		5F07F19A28980A3000A31532 /* CouchbaseLiteSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07F19928980A3000A31532 /* CouchbaseLiteSwift.xcframework */; };
 		5F61CCBA204F578100399C1D /* UserRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61CCB9204F578100399C1D /* UserRecord.swift */; };
 		5F7CCFAF204849BE0019D450 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CCFAE204849BE0019D450 /* UserPresenter.swift */; };
 		5F7CCFB1204849DB0019D450 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CCFB0204849DB0019D450 /* PresenterProtocol.swift */; };
@@ -62,6 +62,7 @@
 		0DF7C420279F439800D3E653 /* UniversityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityPresenter.swift; sourceTree = "<group>"; };
 		0DF7C423279F514600D3E653 /* UniversityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityCell.swift; sourceTree = "<group>"; };
 		0DF7C425279F5D8800D3E653 /* universities.cblite2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = universities.cblite2; sourceTree = "<group>"; };
+		5F07F19928980A3000A31532 /* CouchbaseLiteSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CouchbaseLiteSwift.xcframework; path = Frameworks/CouchbaseLiteSwift.xcframework; sourceTree = "<group>"; };
 		5F61CCB9204F578100399C1D /* UserRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecord.swift; sourceTree = "<group>"; };
 		5F7CCFAE204849BE0019D450 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		5F7CCFB0204849DB0019D450 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
@@ -89,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF7C41A279F16AF00D3E653 /* CouchbaseLiteSwift in Frameworks */,
+				5F07F19A28980A3000A31532 /* CouchbaseLiteSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +135,7 @@
 		5F86E83E2037E292007ED29E = {
 			isa = PBXGroup;
 			children = (
+				5F07F19928980A3000A31532 /* CouchbaseLiteSwift.xcframework */,
 				5F86E8492037E292007ED29E /* UserProfileSyncDemo */,
 				0D97AFAA278E20D5003FCDBD /* UserProfileSyncDemoUITests */,
 				5F86E8482037E292007ED29E /* Products */,
@@ -232,7 +234,6 @@
 			);
 			name = UserProfileSyncDemo;
 			packageProductDependencies = (
-				0DF7C419279F16AF00D3E653 /* CouchbaseLiteSwift */,
 			);
 			productName = UserProfileDemo;
 			productReference = 5F86E8472037E292007ED29E /* UserProfileSyncDemo.app */;
@@ -270,7 +271,6 @@
 			);
 			mainGroup = 5F86E83E2037E292007ED29E;
 			packageReferences = (
-				0DF7C418279F16AF00D3E653 /* XCRemoteSwiftPackageReference "couchbase-lite-swift-ee" */,
 			);
 			productRefGroup = 5F86E8482037E292007ED29E /* Products */;
 			projectDirPath = "";
@@ -603,25 +603,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0DF7C418279F16AF00D3E653 /* XCRemoteSwiftPackageReference "couchbase-lite-swift-ee" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/couchbase/couchbase-lite-swift-ee.git";
-			requirement = {
-				kind = exactVersion;
-				version = "3.0";
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0DF7C419279F16AF00D3E653 /* CouchbaseLiteSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DF7C418279F16AF00D3E653 /* XCRemoteSwiftPackageReference "couchbase-lite-swift-ee" */;
-			productName = CouchbaseLiteSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F86E83F2037E292007ED29E /* Project object */;
 }
