@@ -9,11 +9,11 @@ The core functions of the Sync Gateway include
 - Authorization & Access Control
 - Data Validation
 
-This tutorial will demostrate how to 
+This tutorial will demonstrate how to 
 - Setup the Couchbase Sync Gateway (with Docker) to sync content between multiple Couchbase Lite enabled clients. We will will cover the basics of the Sync Gateway Configuration.
 - Configure your Sync Gateway to enforce data routing, access control and authorization. We will cover the basics of Sync Function API
 - Configure your Couchbase Lite clients for replication with the Sync Gateway
-- Use "Live Queries" or Query events within your Couchbase Lite clients to be asyncronously notified of changes
+- Use "Live Queries" or Query events within your Couchbase Lite clients to be asynchronously notified of changes
 
 Full documentation can be found on the <a target="_blank" rel="noopener noreferrer" href="https://developer.couchbase.com/tutorial-quickstart-ios-uikit-sync">Couchbase Developer Portal</a>.
 
@@ -21,8 +21,8 @@ Full documentation can be found on the <a target="_blank" rel="noopener noreferr
 ## Prerequisites
 To run this prebuilt project, you will need:
 
-- Mac running MacOS 11 or 12 
-- Xcode 12/13 - Download latest version from the <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">Mac App Store</a> or via <a target="_blank" rel="noopener noreferrer" href="https://github.com/RobotsAndPencils/XcodesApp">Xcodes</a>
+- Mac running MacOS 12 or 13
+- Xcode 13/14 - Download latest version from the <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">Mac App Store</a> or via <a target="_blank" rel="noopener noreferrer" href="https://github.com/RobotsAndPencils/XcodesApp">Xcodes</a>
 
 > **Note**: If you are using an older version of Xcode, which you need to retain for other development needs, make a copy of your existing version of Xcode and install the latest Xcode version.  That way you can have multiple versions of Xcode on your Mac.  More information can be found in [Apple's Developer Documentation](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-I_HAVE_MULTIPLE_VERSIONS_OF_XCODE_INSTALLED_ON_MY_MACHINE__WHAT_VERSION_OF_XCODE_DO_THE_COMMAND_LINE_TOOLS_CURRENTLY_USE_)
 > 
@@ -46,4 +46,4 @@ The sample app follows the [MVP pattern](https://en.wikipedia.org/wiki/Model%E2%
 
 ## Conclusion
 
-This tutorial walked you through an example of how to use a Sync Gateway to synchronize data between Couchbase Lite enabled clients. We discussed how to configure your Sync Gateway to enforce relevat access control, authorization and data routing between Couchbase Lite enabled clients.
+This tutorial walked you through an example of how to use a Sync Gateway to synchronize data between Couchbase Lite enabled clients. We discussed how to configure your Sync Gateway to enforce relevant access control, authorization and data routing between Couchbase Lite enabled clients.

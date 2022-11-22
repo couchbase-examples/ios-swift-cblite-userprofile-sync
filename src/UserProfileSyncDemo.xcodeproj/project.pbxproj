@@ -609,8 +609,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/couchbase/couchbase-lite-swift-ee.git";
 			requirement = {
-				kind = exactVersion;
-				version = "3.0";
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

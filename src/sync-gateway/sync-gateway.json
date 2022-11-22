@@ -26,7 +26,7 @@
       "enabled": false
     },
     "debug": {
-      "enabled": false
+      "enabled": true 
     }
   },
   "disable_persistent_config":true,
@@ -36,14 +36,14 @@
     "userprofile": {
       "import_docs": true,
       "bucket":"userprofile",
-      "server": "couchbase://localhost",
+      "server": "couchbase://couchbase-server",
       "enable_shared_bucket_access":true,
       "delta_sync": {
         "enabled":false
       },
        "num_index_replicas":0,
       "username": "admin",
-      "password": "password",
+      "password": "P@ssw0rd",
      "users": { "demo@example.com": { "password": "password"},
                 "demo1@example.com": { "password": "password"},
                 "demo2@example.com":{"password":"password" },
