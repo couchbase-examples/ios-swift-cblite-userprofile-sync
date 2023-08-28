@@ -1,8 +1,8 @@
 version: "3.8"
 services:
 
-  couchbase-server:
-    build: ./couchbase-server
+  couchbase-server-ios-userprofile:
+    build: ./src/couchbase-server
     ports:
      - 8091-8097:8091-8097
      - 9123:9123
@@ -22,7 +22,7 @@ services:
       - COUCHBASE_RAM_SIZE=2048
       - COUCHBASE_INDEX_RAM_SIZE=512
     hostname: couchbase-server
-    container_name: couchbase-server
+    container_name: couchbase-server-ios-userprofile
     working_dir: /opt/couchbase
     stdin_open: true
     tty: true      
@@ -31,14 +31,14 @@ services:
     entrypoint: [""]
     command: sh -c "/opt/couchbase/init/init-cbserver.sh"
 
-  sync-gateway:
-    build: ./sync-gateway
+  sync-gateway-ios-userprofile:
+    build: ./src/sync-gateway
     ports:
       - 4984-4986:4984-4986
     hostname: sync-gateway
-    container_name: sync-gateway
+    container_name: sync-gateway-ios-userprofile
     depends_on:
-      - couchbase-server
+      - couchbase-server-ios-userprofile 
     working_dir: /docker-syncgateway
     stdin_open: true
     tty: true      
