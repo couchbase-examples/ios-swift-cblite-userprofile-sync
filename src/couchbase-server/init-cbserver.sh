@@ -49,7 +49,7 @@ if ! [ -f "$FILE" ]; then
   --roles mobile_sync_gateway[*] \
   --auth-domain local
 
-  sleep 2s 
+  sleep 10s 
 
   /opt/couchbase/bin/curl -v http://localhost:8093/query/service \
   -u $COUCHBASE_ADMINISTRATOR_USERNAME:$COUCHBASE_ADMINISTRATOR_PASSWORD \
