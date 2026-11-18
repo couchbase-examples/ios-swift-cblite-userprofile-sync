@@ -1,7 +1,12 @@
+# Backend versions for this tutorial are declared once here.
+# Override at build time, e.g. SYNC_GATEWAY_VERSION=4.0.4-enterprise docker compose build
 services:
 
   couchbase-server-ios-userprofile:
-    build: ./src/couchbase-server
+    build:
+      context: ./src/couchbase-server
+      args:
+        COUCHBASE_SERVER_VERSION: ${COUCHBASE_SERVER_VERSION:-7.6.9}
     ports:
      - 8091-8097:8091-8097
      - 9123:9123
@@ -29,15 +34,25 @@ services:
       - workshop
     entrypoint: [""]
     command: sh -c "/opt/couchbase/init/init-cbserver.sh"
+    healthcheck:
+      # healthy once init-cbserver.sh has finished setup and the bucket is reachable
+      test: ["CMD-SHELL", "test -f /opt/couchbase/init/setupComplete.txt && /opt/couchbase/bin/curl -sf -u \"$$COUCHBASE_ADMINISTRATOR_USERNAME:$$COUCHBASE_ADMINISTRATOR_PASSWORD\" http://127.0.0.1:8091/pools/default/buckets/$$COUCHBASE_BUCKET"]
+      interval: 5s
+      timeout: 5s
+      retries: 60
 
   sync-gateway-ios-userprofile:
-    build: ./src/sync-gateway
+    build:
+      context: ./src/sync-gateway
+      args:
+        SYNC_GATEWAY_VERSION: ${SYNC_GATEWAY_VERSION:-3.2.6-enterprise}
     ports:
       - 4984-4986:4984-4986
     hostname: sync-gateway
     container_name: sync-gateway-ios-userprofile
     depends_on:
-      - couchbase-server-ios-userprofile 
+      couchbase-server-ios-userprofile:
+        condition: service_healthy
     working_dir: /docker-syncgateway
     stdin_open: true
     tty: true      

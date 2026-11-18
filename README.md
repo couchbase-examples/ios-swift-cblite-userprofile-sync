@@ -40,6 +40,7 @@ The sample app follows the [MVP pattern](https://en.wikipedia.org/wiki/Model%E2%
 
 ## Try it out
 
+* Start the local Couchbase Server and Sync Gateway backend with `docker compose up -d --build --wait`. The command returns once Couchbase Server has finished its setup and Sync Gateway is running. Image versions are set in `docker-compose.yml` and can be overridden with the `COUCHBASE_SERVER_VERSION` and `SYNC_GATEWAY_VERSION` environment variables.
 * Open `src/UserProfileSyncDemo.xcodeproj` using Xcode
 * Build and run the project.
 * Verify that you see the login screen.
